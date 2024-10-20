@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Project tracking intro component</title>
+    <!-- __________________________ -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ____________________________ -->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="bg"></div>
+      <img src="images/logo.svg" alt="logo-image" class="logo" />
+      <div class="navbar">
+        <nav>
+          <a href="#">Product</a>
+          <a href="#">features</a>
+          <a href="#">pricing</a>
+          <div class="circle"></div>
+          <a href="#" class="log">login</a>
+        </nav>
+        <button class="nav_btn">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </button>
+      </div>
+    </header>
+    <div class="main_container">
+      <main>
+        <div class="img_container">
+          <img
+            src="images/illustration-devices.svg"
+            alt="hero-illustration"
+            class="hero_img"
+          />
+        </div>
+        <div class="txt_container">
+          <section class="new_section">
+            <p>
+              <span>NEW</span>
+              MONOGRAPH DASHBOARD
+            </p>
+          </section>
+          <h1>
+            POWERFUL INSIGHTS <br />
+            INTO YOUR TEAM
+          </h1>
+          <p class="description">
+            Project planning and time tracking <br />
+            for agile teams
+          </p>
+          <section class="demo_sec">
+            <button class="btn">Schedule a demo</button>
+            <p>to see a preview</p>
+          </section>
+        </div>
+      </main>
+    </div>
+    <script>
+      const btn = document.querySelector(".nav_btn");
+      const navbar = document.querySelector(".navbar");
+
+      btn.addEventListener("click", () => {
+        navbar.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
